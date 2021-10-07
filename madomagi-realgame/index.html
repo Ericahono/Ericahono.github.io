@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チケット</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        main {
+            /* background-color:rgb(233, 139, 170) ; */
+            width: 900px;
+            /* box-sizing: border-box; */
+            /* border-radius: 3em; */
+            margin: 0 auto;
+            padding: 50px;
+            padding-top: 10px;
+
+        }
+
+        .ticket {
+
+            color: white;
+            background-color: rgb(78, 28, 94);
+            box-sizing: border-box;
+            width: 500px;
+            padding: 15px;
+            margin: 2em auto;
+            border-radius: 2em;
+
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        /*
+        表格顯示border的時候，兩格子相交處的邊框線會變兩倍
+        >border-collapse（spacing會被忽略，格子會被推在一起，變成單一變框）
+        border-spacing是控制格子之間的間距 */
+
+        .time {
+            background-color: #d2af4f;
+            color: white;
+            padding: 20px;
+            border: 1px solid #fcc121;
+
+        }
+
+        .none {
+            border: none;
+            background-color: none;
+        }
+
+        .people {
+            background-color: #77357E;
+            border: 1px solid #fcc121;
+
+            padding: 20px;
+            color: white;
+        }
+
+        td {
+            /* background-color: papayawhip; */
+            color: #d2af4f;
+            font-weight: 700;
+            border: 1px solid #fcc121;
+            padding: 20px;
+
+        }
+
+.qbsp-title{
+    display: block;
+    margin:0px auto;
+}
+        #qbsp {
+            color: rgb(78, 28, 94);
+            border: 6px solid #fcc121;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 35px;
+        }
+
+        p {
+            color: #77357E;
+        }
+
+        footer{
+            background-color: rgb(78, 28, 94);
+            padding: 50px;
+            margin: 0 auto;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header><img src="/images/ticket-info.png" alt="チケット情報" title="チケット情報"></header>
+
+    <main>
+        <section>
+            <div class="schedule">
+                <img src="/images/sc.png" alt="スケジュール">
+
+                <h3 style="background-color: #c09632; color:white;padding: 10px;">10月3日限定 まどか誕生日記念先行</h3>
+                <h3 style="color: rgb(78, 28, 94);">2021年10月3日（日）10:00～23:59</h3>
+                <h3 style="background-color: #1e1d6a;color:white;padding: 10px;">少年探偵SCRAP団(FC)団員先行</h3>
+                <h3 style="color: rgb(78, 28, 94);">2021年10月9日（土）12:00～10月15日（金）23:59</h3>
+                <h3 style="background-color: #6a285f; color: white;padding: 10px;">プレイガイド先行</h3>
+                <h3 style="color: rgb(78, 28, 94);">2021年10月16日（土）12:00～10月22日（金）23:59</h3>
+                <h3 style="background-color: #5a3b77;color: white;padding: 10px;">一般</h3>
+                <h3 style="color: rgb(78, 28, 94);">2021年10月23日（土）12:00～</h3>
+            </div>
+        </section>
+
+        <section>
+            <div class="cost"><img src="images/價格表.png" alt="価格表" title="価格表"></div>
+            <div class="ticket">
+                <h3>前売チケット</h3>
+            </div>
+
+            <table>
+                <tr>
+                    <th class="none"></th>
+                    <th class="time">平日</th>
+                    <th class="time">土日祝&ハイシーズン</th>
+                <tr>
+                    <th class="people">一般</th>
+                    <td>3400円/人</td>
+                    <td>3,800円/1人</td>
+                <tr>
+                    <th class="people">一般グループ</th>
+                    <td>13,200円/1～4人</td>
+                    <td>14,800円/1～4人</td>
+                <tr>
+                    <th class="people">学生</th>
+                    <td>3,100円/1人</td>
+                    <td>3,500円/1人</td>
+                <tr>
+                    <th class="people">学生グループ</th>
+                    <td>12,000円/1～4人</td>
+                    <td>13,600円/1～4人</td>
+            </table>
+
+            <h3 style="color: #77357E;">※特典付きチケット取り扱いあり（3,000円×希望個数）</h3>
+            <div class="ticket">
+                <h3>当日チケット</h3>
+            </div>
+            <table>
+                <tr>
+                    <th class="none"></th>
+                    <th class="time">平日</th>
+                    <th class="time">土日祝＆ハイシーズン</th>
+
+                <tr>
+                    <th class="people">一般</th>
+                    <td>3,700円/1人</td>
+                    <td>4,100円/1人</td>
+                <tr>
+                    <th class="people">一般グループ</th>
+                    <td>14,400円/1～4人</td>
+                    <td>16,000円/1～4人</td>
+                <tr>
+                    <th class="people">学生</th>
+                    <td>3,400円/1人</td>
+                    <td>3,800円/1人</td>
+                <tr>
+                    <th class="people">学生グループ</th>
+                    <td>13,200円/1～4人</td>
+                    <td>14,800円/1～4人</td>
+
+            </table>
+
+            <strong>
+                <p>※料金はすべて税込表記です。<br>
+                    ※ハイシーズンは、GW、年末年始、夏季休暇などを含む大型連休期間を想定しています。<br>
+                    ※グループチケットとは、1～4人のお好きな人数で、<br>ご家族や友人同士のみで遊べるテーブル貸切のチケットです。</strong></p>
+
+                    <strong><p>※チケットに関する詳細は<a href="https://realdgame.jp/madoka-magica/readme.html" target="_blank"
+                        style="color:#d2af4f;">こちら</a>をご確認ください。</strnog></p>
+            
+
+        </section>
+
+        <section>
+
+            <div class="sp">
+                <img src="/images/sp.png" alt="特典セット" title="特典付きセット" class="qbsp-title">
+                <h1 style="color: rgb(78, 28, 94);">僕と契約して魔法少女になってよ！セット</h1>
+                <img src="https://realdgame.jp/madoka-magica/common/images/special_ticket.jpg" alt="特典付きセット"
+                    title="僕と契約してセット" width="800">
+                <div id="qbsp">
+                    <h2>※特典はチケット料金に加え、<span style="color: #d2af4f;">3,000円×希望個数</span>となります。</h2>
+                </div>
+                <p>※当日券の販売はございません。前売券のみでの販売となります。<br>
+                    ※特典は会場にて、イベント参加当日にお渡しいたします。特典のみでの発売はいたしません。</p>
+                
+            </div>
+        </section>
+
+        <a href="https://twitter.com/search?q=%23%E3%81%BE%E3%81%A9%E3%81%8B%E8%84%B1%E5%87%BA" target="_blank"
+                    style="background-color: rgb(73, 123, 156); color: white; border-radius: 2em; 
+                    padding: 30px;display:inline-block">#まどか脱出のツイートを見る</a>
+
+                    <!-- a是inline元素，所以要用inline-block把a變塊級，才不會跟上面的字撞在一起 -->
+    </main>
+
+    <footer>    
+
+<img src="/images/rdg_logo.svg" alt="rdg_logo" title="rdg_logo" width="150" height="auto">
+    </footer>
+
+</body>
+
+</html>
