@@ -1,0 +1,121 @@
+/* CSS Variables */
+:root {
+  --nav-height: 120px;
+  --main-color: #39819f;
+}
+
+/* Colors */
+.main-color {
+  color: var(--main-color);
+}
+
+.bg-main-color {
+  background-color: var(--main-color);
+}
+
+/* Font */
+html {
+  font-size: 18px;
+}
+body {
+  font-family: "Noto Serif TC", "Ribeye";
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+}
+
+/* Base Settings */
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Layout */
+main {
+  margin-top: var(--nav-height);
+}
+
+nav {
+  height: var(--nav-height);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+#mana {
+  position: absolute;
+  top: 0;
+  left: -25%;
+  transform: rotate(1.02turn);
+}
+
+/* .character-card > img:nth-child(2) {
+  display: none;
+}
+
+.character-card:hover > img:nth-child(1) {
+  display: none;
+}
+
+.character-card:hover > img:nth-child(2) {
+  display: block;
+} */
+
+#mana {
+  z-index: -1;
+}
+
+.c-container{
+    perspective: 1500px;
+}
+.c-container:hover .c-card {
+  transform: rotateY(180deg);
+}
+.c-card {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  padding-bottom: 100%;
+  width: 100%;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(-180deg);
+}
+
+.c-card > .front, .c-card > .back {
+  width: 100%;
+}

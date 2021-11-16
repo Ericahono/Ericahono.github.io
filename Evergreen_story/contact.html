@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EverGreen Story</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/pc.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Josefin+Sans:wght@500&family=Prompt&family=Roboto:wght@500&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Josefin+Sans:wght@500&family=Prompt&family=Ribeye&family=Roboto:wght@500&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body class="main-color">
+    <nav class="fixed-top w-100 text-uppercase px-5 d-flex w-100 pb-3 align-items-center justify-content-between">
+      <a class="me-5" href="index.html"><img src="./public/img/logo_2.png" alt="" width="75px"></a>
+      <ul class="h-100 w-100 d-none d-md-flex justify-content-around align-items-center list-unstyled mb-0">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="story.html">Story</a></li>
+        <li><a href="character.html">Character</a></li>
+        <li><a href="synopsis.html">Synopsis</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div id="menu" class="d-inline-block d-md-none">
+        <img src="./public/img/Menu.png" alt="" width="45" />
+      </div>
+    </nav>    
+    <!-- 手機版nav -->
+    <div id="mobile-nav" class="fixed-top w-100 h-100 bg-main-color" style="color: white">
+      <div id="close_btn" class="position-absolute d-inline-block"><img src="./public/img/closebtn.png" alt="" width="45" /></div>
+      <ul style="padding: 10px 0" class="h-100 w-100 d-flex flex-column justify-content-around align-items-center list-unstyled mb-0">
+        <li><a href="#">Home</a></li>
+        <li><a href="story.html">Story</a></li>
+        <li><a href="character.html">Character</a></li>
+        <li><a href="synopsis.html">Synopsis</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    
+    <main class="container py-3 text-center">
+      <h1 class="mb-5" style="color: white;">Contact</h1>    
+      <h2 class="mb-4" style="color: white;">前往原野</h2>
+      <div class="map-1 mb-5 feedback"><img src="./public/img/feedback.png" alt="" width="100%"></div>
+    
+    <!-- contact email -->
+
+    <div class="content">
+    
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            
+  
+            <div class="row justify-content-center">
+              <div class="col-md-6"> 
+                <h1 class="mb-0" style="font-family:Noto Serif TC">歡迎來到貓頭鷹之家！</h1>
+                <p class="mt-2">有什麼問題就寄信聯絡我們吧！</p>             
+                <p><img src="./public/img/character/wix.png" alt="Image" class="img-fluid"></p>
+              </div>
+              <div class="col-md-6">                
+                <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                  <div class="row">
+                    <div class="col-md-12 mb-2 form-group">
+                      <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 mb-2 form-group">
+                      <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 mb-2 form-group">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 mb-2 form-group">
+                      <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
+                    </div>
+                  </div>  
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <input type="submit" value="送出" class="btn btn-primary rounded-0 py-2 px-4 mt-4">
+                    <span class="submitting"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+    <h1 class="mb-5" style="font-family:Noto Serif TC">願您能享受在原野的探索時光，我們由衷期待能與您再次相見。</h1>
+      <h2>We hope you enjoyed your moment in Evergreen!</h2>
+
+      <div class="mt-5" id="pm"><img src="./public/img/character/pomimoro.png" alt=""></div>
+
+
+    
+
+
+      
+      
+    </main>
+    <footer>
+      <div id="sns">
+        <a href="#twitter"><img src="./public/img/twitter-s.png" alt=""></a></li>
+        <a href="https://www.instagram.com/pomimoro/"><img src="./public/img/ins-s.png" alt=""></a></li>
+      </div>
+      <div id="gottop"><a href="#"><img src="./public/img/TOP.svg" alt="" width="100px"></a></div>
+    </footer>
+    <script src="./public/js/jquery-3.6.0.min.js"></script>
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>

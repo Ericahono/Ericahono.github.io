@@ -1,0 +1,135 @@
+/* CSS Variables */
+:root {
+  --nav-height: 120px;
+  --main-color: #39819f;
+}
+
+/* Colors */
+.main-color {
+  color: var(--main-color);
+}
+
+/* Font */
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Noto Serif TC", "Ribeye";
+  /* background: url("../public/img/bg_story-2.png") no-repeat; */
+  background: #005aa7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #fffde4, #56b5cb); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #fcfbec, #56b5cb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+/* Base Settings */
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #f9c16e;
+}
+
+/* Layout */
+main {
+  margin-top: var(--nav-height);
+}
+
+nav {
+  height: var(--nav-height);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.story-wrapper {
+  background-color: #fffcd787;
+  border-radius: 50px;
+  box-shadow: 0.3em 0.3em 0.5em #ade8d6;
+  position: relative;
+}
+
+#pomimoro {
+  display: inline-block;
+  width: 135px;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+}
+
+.story-wrapper::before {
+  border-radius: 10px;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: url("../public/img/story.png") center center no-repeat;
+  background-size: cover;
+  filter: opacity(0.5) blur(1px);
+}
+
+.story-scene img {
+  /* box-shadow: 0.3em 0.3em 0.5em rgba(15, 37, 99, 0.705); */
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin: 2em auto;
+  overflow: hidden;
+  border: 10px solid #2f777a;
+  border-radius: 1rem;
+  outline: 4.5px dashed #449c82;
+  position: relative;
+}
+
+/* map */
+
+.imgbox {
+  width: auto;
+  max-width: 800px;
+  height: auto;
+  margin: 5em auto;
+  overflow: hidden;
+  border: 10px solid #2f777a;
+  border-radius: 1rem;
+  outline: 4.5px dashed #449c82;
+  position: relative;
+}
+.imgbox > img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -5px;
+  transition: all 0.3s ease-out;
+  position: relative;
+  z-index: 2;
+}
+
+.imgbox:hover img {
+  transform: scale(1.2, 1.2);
+  z-index: 9;
+}
